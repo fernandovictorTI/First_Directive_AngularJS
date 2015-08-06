@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html ng-app="App">
+<head>
+    <title>First Directive AngularJS</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+</head>
+<body>
+
+    <div ng-controller="MenuController as vm">
+        <menu-directive menu="vm.menu"></menu-directive>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <h1>Index</h1>
+
+    <div ng-view></div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    @Scripts.Render("~/bundles/Lib_Angular")
+    @Scripts.Render("~/bundles/App")
+
+</body>
+</html>
